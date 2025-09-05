@@ -7,6 +7,8 @@ import hero_image from "../Assets/hero_image.png";
 const Hero = () => {
   return (
     <div className="hero">
+      
+      {/* Left Side */}
       <div className="hero-left">
         <h2>New Arrival</h2>
         <div className="hero-hand-icon">
@@ -21,6 +23,7 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Right Side */}
       <div className="hero-right">
         <img src={hero_image} alt="" />
       </div>
