@@ -23,7 +23,7 @@
   font-size: 20px;
 }
 
-.news-letter div {
+.news-letter div{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,4 +32,29 @@
   height: 70px;
   border-radius: 80px;
   border: 1px solid #e3e3e3;
+}
+
+.news-letter input {
+  width: 500px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.news-letter div button{
+  width: 210px;
+  height: 70px;
+  border-radius: 80px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.news-letter div button:hover{
+  font-size: 20px;
+  font-weight: bold;
 }
