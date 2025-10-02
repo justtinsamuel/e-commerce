@@ -20,10 +20,15 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <img className="nav-dropdown" src={logo} alt="" />
+        <img src={logo} alt="" />
         <p>Shopper</p>
       </div>
-      <img onClick={dropdown_toggle} src={nav_dropdown} alt="" />
+      <img
+        className="nav-dropdown"
+        onClick={dropdown_toggle}
+        src={nav_dropdown}
+        alt=""
+      />
       <ul ref={menuRef} className="nav-menu">
         <li
           onClick={() => {
