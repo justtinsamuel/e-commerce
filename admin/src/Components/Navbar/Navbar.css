@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Responsive padding using clamp(min, preferred, max) */
+  padding: clamp(10px, 2vw, 20px) clamp(20px, 5vw, 60px);
+  box-shadow: 0 1px 3px -2px #000;
+  margin-bottom: 1px;
+  background: white;
+}
+
+/* Logo scales with screen width */
+.nav-logo {
+  width: clamp(120px, 15vw, 200px);
+}
+
+/* Profile picture also scales */
+.nav-profile {
+  width: clamp(40px, 6vw, 75px);
+  border-radius: 50%;
+}
+
+/* Optional: handle layout changes for tighter screens */
+@media (max-width: 1280px) {
+  .navbar {
+    padding: clamp(8px, 2vw, 18px) clamp(16px, 4vw, 40px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .nav-logo {
+    width: clamp(100px, 18vw, 160px);
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: clamp(8px, 3vw, 15px);
+  }
+  .nav-logo {
+    width: clamp(90px, 25vw, 140px);
+  }
+  .nav-profile {
+    width: clamp(35px, 8vw, 60px);
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: clamp(6px, 4vw, 12px);
+  }
+  .nav-logo {
+    width: clamp(80px, 30vw, 120px);
+  }
+  .nav-profile {
+    width: clamp(30px, 10vw, 50px);
+  }
+}
